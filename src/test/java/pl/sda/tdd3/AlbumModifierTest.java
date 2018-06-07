@@ -11,7 +11,7 @@ public class AlbumModifierTest {
 
 
     @Test
-    public void testAlbumStorageCreator() throws IOException {
+    public void testNewAlbum() {
         //given
 
         //when
@@ -21,7 +21,7 @@ public class AlbumModifierTest {
     }
 
     @Test
-    public void testAddAlbum(AlbumModel album) throws IOException {
+    public void testChangeAlbum() {
         //given
 
         //when
@@ -30,15 +30,7 @@ public class AlbumModifierTest {
 
     }
 
-    @Test
-    public void testSubtractAlbum(AlbumModel album) throws IOException {
-        //given
 
-        //when
-
-        //then
-
-    }
 
 
 
