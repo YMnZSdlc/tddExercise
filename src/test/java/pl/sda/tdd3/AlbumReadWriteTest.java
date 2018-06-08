@@ -11,11 +11,11 @@ import java.util.Map;
 public class AlbumReadWriteTest {
 
     AlbumReadWrite albumReadWrite = new AlbumReadWrite();
+    String path = "C:\\SDA\\album.xml";
 
     @Test
     public void testReadAlbumFromFile() throws IOException {
         //given
-        String path = "C:\\SDA\\album.csv";
         AlbumModel expectedModel = new AlbumModel("Punk",
                 "Kult","Prosto",1,3);
         Map<Integer, AlbumModel> expectedAlbum = new HashMap<Integer, AlbumModel>();
@@ -26,13 +26,19 @@ public class AlbumReadWriteTest {
         actualAlbum = albumReadWrite.readAlbumFromFile(path);
 
         //then
-        
+
 
     }
 
     @Test
     public void testWriteAlbumToFile() {
+/*        Metoda powinna zapisywać przekazaną mapę obiektów Album do pliku
+                pod wskazaną ścieżkę w postaci xml.*/
         //given
+        Map<Integer, AlbumModel> albumToWrite = new HashMap<Integer, AlbumModel>();
+        AlbumModel expectedModel = new AlbumModel("Punk",
+                "Kult","Prosto",1,3);
+
 
         //when
 
